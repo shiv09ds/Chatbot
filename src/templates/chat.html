@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ai Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}" />
+</head>
+
+<body>
+  <div class="app-container">
+    <main class="chat-section">
+      <header class="chat-header">Chatbot</header>
+      <div class="chat-box" id="chatBox"></div>
+      <div class="input-area">
+        <textarea id="messageInput" placeholder="Message"></textarea>
+        <button onclick="sendMessage()">➤</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="{{url_for('static', filename = 'js/script.js')}}"></script>
+</body>
+
+</html>
