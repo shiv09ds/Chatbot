@@ -34,8 +34,7 @@ async def GetMessage(mes, url, headers):
             return {"error": "Failed to fetch data"}
 
 async def fetch_data(userMessage):
-    # key = os.getenv("key")
-    key = "AIzaSyAwSX5ZFolvDS9WUK0DkcRP77RRzQry8gg"
+    key = os.getenv("key")
     api = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={key}"
 
     headers = {
